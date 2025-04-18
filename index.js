@@ -122,10 +122,8 @@ class Menu {
     deleteQuantity() {
         let index = prompt('Enter the index of the part you want to remove:');
         let amount = prompt('Enter how many you are removing:');
-        if (index > -1 && index < this.selectedBrand.part.quantity) {
-            alert(this.selectedBrand.Part[index].quantity -= amount);
-        }
-    }
+        if(index > -1 && index < this.selectedBrand.part.length){this.selectedBrand.part[index].quantity -= amount;
+    }}
 
 }
 
