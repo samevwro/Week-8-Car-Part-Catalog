@@ -20,6 +20,8 @@ class Parts {
     describe() {
         return(`We have ${this.quantity} ${this.part}`);
     }
+    
+    
 }
 class Menu {
     constructor() {
@@ -120,8 +122,8 @@ class Menu {
     deleteQuantity() {
         let index = prompt('Enter the index of the part you want to remove:');
         let amount = prompt('Enter how many you are removing:');
-        if (index > -1 && index < this.selectedBrand.part.length) {
-            this.selectedBrand.Part[index].quantity -= amount;
+        if (index > -1 && index < this.selectedBrand.part.quantity) {
+            alert(this.selectedBrand.Part[index].quantity -= amount);
         }
     }
 
